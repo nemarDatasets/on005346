@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Naturalistic fMRI and MEG recordings during viewing of a reality TV show",
-  "description": "This dataset comprises simultaneous naturalistic fMRI and MEG recordings from 60 participants (30 per modality) who watched a 25-minute excerpt from a Chinese reality TV show. The study captures neural responses during passive video viewing and subsequent spontaneous mental replay, employing both conventional 3.0T fMRI and novel 64-channel optically pumped magnetometer (OPM) MEG systems. The dataset includes anatomical MRI scans, preprocessed functional data, and behavioral measures of stimulus engagement, providing a unique resource for investigating naturalistic brain dynamics across complementary neuroimaging modalities.",
-  "methods_description": "fMRI data were acquired on a 3.0T Siemens Prisma scanner using T1-weighted MP-RAGE anatomical scans (1×1×1 mm voxels, TR=2300ms) and T2-weighted echo-planar imaging functional scans (2.5×2.5×2.5 mm voxels, TR=2000ms, 63 slices). MEG data were recorded using a 64-channel optically pumped magnetometer system (Quanmag) with 1000 Hz sampling rate and radial sensor orientation. Participants viewed a 25-minute video stimulus followed by a comprehension quiz and 15-minute eyes-closed rest period. Preprocessing included DICOM-to-BIDS conversion, defacing, fMRIPrep pipeline with MNI152NLin2009cAsym normalization, motion correction, and confound regression. Six MEG participants were excluded from inter-subject correlation analysis due to anomalous power spectral density patterns.",
+  "description": "This dataset comprises simultaneous naturalistic fMRI and MEG recordings from 60 participants (30 per modality) who watched a 25-minute excerpt from a Chinese reality TV show. The study captures brain activity during both active viewing with comprehension assessment and subsequent spontaneous mental replay, providing a rich multimodal neuroimaging resource for investigating naturalistic cognition and inter-subject correlation analyses in ecologically valid contexts.",
+  "methods_description": "fMRI data were acquired on a 3.0 T Siemens Prisma scanner using T1-weighted MP-RAGE anatomical scans (1×1×1 mm voxels) and T2-weighted echo-planar imaging functional scans (2.5×2.5×2.5 mm voxels, TR=2000 ms, TE=30 ms). MEG data were recorded using a 64-channel optically pumped magnetometer system (Quanmag) with 1000 Hz sampling rate and radial sensor orientation. Participants viewed a naturalistic video stimulus followed by comprehension questions and a 15-minute eyes-closed resting period. fMRI preprocessing included skull stripping, motion correction, slice-timing correction, and normalization to MNI152NLin2009cAsym template using fMRIPrep v20.2.0. MEG preprocessing involved artifact removal, independent component analysis, and source localization using structural MRI.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -23,13 +23,16 @@
       "term": "naturalistic stimuli"
     },
     {
-      "term": "optically pumped magnetometer"
-    },
-    {
       "term": "inter-subject correlation"
     },
     {
-      "term": "spontaneous brain activity"
+      "term": "optically pumped magnetometer"
+    },
+    {
+      "term": "resting state"
+    },
+    {
+      "term": "video viewing"
     }
   ],
   "related_identifiers": [
