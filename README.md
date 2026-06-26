@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on005346-blue)](https://doi.org/10.82901/nemar.on005346)
+
 ### Participants
 Thirty participants (17 females, mean age=23.17±2.31 years) were recruited for the fMRI experiment at Shanghai International Studies University, Shanghai, China. An additional thirty participants (16 females, mean age=22.67±1.99 years) were recruited from the West China Hospital of Sichuan University, Chengdu, China for MEG experiment. All participants were right-handed, had normal or corrected-to-normal vision, and reported no history of neurological disorders. Before the experiment, all participants provided written informed consent and were compensated for their participation.
 
