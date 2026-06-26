@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Naturalistic fMRI and MEG recordings during viewing of a reality TV show",
+  "description": "This dataset comprises simultaneous naturalistic fMRI and MEG recordings from 60 participants (30 per modality) who watched a 25-minute excerpt from a Chinese reality TV show. The study captures neural responses during passive video viewing and subsequent spontaneous mental replay, employing both conventional 3.0T fMRI and novel 64-channel optically pumped magnetometer (OPM) MEG systems. The dataset includes anatomical MRI scans, preprocessed functional data, and behavioral measures of stimulus engagement, providing a unique resource for investigating naturalistic brain dynamics across complementary neuroimaging modalities.",
+  "methods_description": "fMRI data were acquired on a 3.0T Siemens Prisma scanner using T1-weighted MP-RAGE anatomical scans (1×1×1 mm voxels, TR=2300ms) and T2-weighted echo-planar imaging functional scans (2.5×2.5×2.5 mm voxels, TR=2000ms, 63 slices). MEG data were recorded using a 64-channel optically pumped magnetometer system (Quanmag) with 1000 Hz sampling rate and radial sensor orientation. Participants viewed a 25-minute video stimulus followed by a comprehension quiz and 15-minute eyes-closed rest period. Preprocessing included DICOM-to-BIDS conversion, defacing, fMRIPrep pipeline with MNI152NLin2009cAsym normalization, motion correction, and confound regression. Six MEG participants were excluded from inter-subject correlation analysis due to anomalous power spectral density patterns.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -10,12 +12,27 @@
     "Chengcheng Wang": {},
     "Zhengwu Ma": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds005346.v1.0.5",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "fMRI"
     },
+    {
+      "term": "MEG"
+    },
+    {
+      "term": "naturalistic stimuli"
+    },
+    {
+      "term": "optically pumped magnetometer"
+    },
+    {
+      "term": "inter-subject correlation"
+    },
+    {
+      "term": "spontaneous brain activity"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on005346",
       "identifier_type": "URL",
@@ -25,67 +42,11 @@
       "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005346",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
-    }
-  ],
-  "modalities": [
-    "anat",
-    "func",
-    "meg"
-  ],
-  "resource_type_specific": "Structural MRI Dataset",
-  "sizes": [
-    "388.4 MB (25 files)"
-  ],
-  "formats": [
-    ".csv",
-    ".fif",
-    ".gz",
-    ".json",
-    ".md",
-    ".mp4",
-    ".tsv"
-  ],
-  "description": "This dataset comprises simultaneous naturalistic fMRI and MEG recordings from 60 participants (30 per modality) who watched a 25-minute excerpt from a Chinese reality TV show. The study captures neural responses during passive viewing and subsequent spontaneous mental replay, providing multimodal neuroimaging data for investigating naturalistic cognition and inter-subject correlation patterns. Both fMRI and MEG data are accompanied by anatomical MRI scans and behavioral comprehension assessments. Data from 6 MEG participants exhibited distinct power spectral density patterns and were excluded from inter-subject correlation and regression analyses (final MEG sample: 24 participants), though all datasets remain available in the repository.",
-  "methods_description": "fMRI data were acquired on a 3.0 T Siemens Prisma scanner using T2-weighted echo planar imaging (63 interleaved axial slices, voxel size 2.5×2.5×2.5 mm, TR=2000 ms, TE=30 ms, flip angle=60°). MEG data were recorded using a 64-channel optically pumped magnetometer system (Quanmag) with 1000 Hz sampling rate and radial sensor orientation. Anatomical T1-weighted scans were acquired for both modalities. Participants viewed a naturalistic video stimulus followed by a comprehension quiz and 15 minutes of eyes-closed rest. fMRI preprocessing included skull stripping, motion correction, slice-timing correction, and spatial normalization to MNI space using fMRIPrep (v20.2.0).",
-  "keywords": [
-    {
-      "term": "fMRI"
     },
     {
-      "term": "MEG"
-    },
-    {
-      "term": "naturalistic viewing"
-    },
-    {
-      "term": "inter-subject correlation"
-    },
-    {
-      "term": "optically pumped magnetometer"
-    },
-    {
-      "term": "spontaneous neural activity"
-    },
-    {
-      "term": "multimodal neuroimaging"
-    },
-    {
-      "term": "mental replay"
-    },
-    {
-      "term": "passive viewing"
-    },
-    {
-      "term": "video stimulus"
-    },
-    {
-      "term": "reality TV"
-    },
-    {
-      "term": "Shanghai"
-    },
-    {
-      "term": "Chengdu"
+      "identifier": "10.18112/openneuro.ds005346.v1.0.5",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -98,5 +59,24 @@
       "award_number": "2024[657]"
     }
   ],
-  "source_hash": "1f384066545f55025eb6105c6e51048648e04d4dc2baef7106b985d91899f15c"
+  "resource_type_specific": "Structural MRI Dataset",
+  "modalities": [
+    "anat",
+    "func",
+    "meg"
+  ],
+  "sizes": [
+    "120.5 GB (515 files)"
+  ],
+  "formats": [
+    ".csv",
+    ".fif",
+    ".gz",
+    ".json",
+    ".md",
+    ".mp4",
+    ".tsv",
+    ".yml"
+  ],
+  "source_hash": "4bac31117e4033b6e7ed6923811b3dac2d1034120cb81068fd9f71f01c35d441"
 }
