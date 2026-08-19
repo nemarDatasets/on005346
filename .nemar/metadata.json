@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Naturalistic fMRI and MEG recordings during viewing of a reality TV show",
-  "description": "This dataset comprises simultaneous naturalistic fMRI and MEG recordings from 60 participants (30 per modality) who watched a 25-minute excerpt from a Chinese reality TV show. The study captures brain activity during both active viewing with comprehension assessment and subsequent spontaneous mental replay, providing a rich multimodal neuroimaging resource for investigating naturalistic cognition and inter-subject correlation analyses in ecologically valid contexts.",
-  "methods_description": "fMRI data were acquired on a 3.0 T Siemens Prisma scanner using T1-weighted MP-RAGE anatomical scans (1×1×1 mm voxels) and T2-weighted echo-planar imaging functional scans (2.5×2.5×2.5 mm voxels, TR=2000 ms, TE=30 ms). MEG data were recorded using a 64-channel optically pumped magnetometer system (Quanmag) with 1000 Hz sampling rate and radial sensor orientation. Participants viewed a naturalistic video stimulus followed by comprehension questions and a 15-minute eyes-closed resting period. fMRI preprocessing included skull stripping, motion correction, slice-timing correction, and normalization to MNI152NLin2009cAsym template using fMRIPrep v20.2.0. MEG preprocessing involved artifact removal, independent component analysis, and source localization using structural MRI.",
+  "description": "This dataset comprises naturalistic fMRI and MEG recordings from healthy adult participants who viewed an excerpt of a Chinese reality TV show, 'Where Are We Going, Dad?'. Thirty participants underwent fMRI scanning and thirty separate participants underwent MEG scanning using a novel OPM-MEG system, followed by comprehension questions and a resting period to capture spontaneous mental replay of the video. The dataset supports investigations of naturalistic neural processing, inter-subject correlation, and comparison between hemodynamic and neuromagnetic responses to complex audiovisual stimuli.",
+  "methods_description": "fMRI data were acquired on a 3.0T Siemens Prisma scanner with T1-weighted MP-RAGE anatomical scans and T2*-weighted EPI functional scans. MEG data were recorded using a 64-channel optically pumped magnetometer (OPM) system at 1000 Hz sampling rate within a magnetically shielded room; T1-weighted MRI scans were also acquired for source localization using a 3.0T Siemens TrioTim scanner. Preprocessing included conversion to BIDS/NIfTI format via dcm2bids and dcm2niix, defacing with PyDeface, and fMRIPrep-based preprocessing including motion correction, slice-timing correction, and coregistration.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -17,7 +17,12 @@
       "term": "fMRI"
     },
     {
-      "term": "MEG"
+      "term": "Magnetoencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
+    },
+    {
+      "term": "optically pumped magnetometer"
     },
     {
       "term": "naturalistic stimuli"
@@ -26,13 +31,16 @@
       "term": "inter-subject correlation"
     },
     {
-      "term": "optically pumped magnetometer"
+      "term": "reality TV"
     },
     {
       "term": "resting state"
     },
     {
-      "term": "video viewing"
+      "term": "audiovisual"
+    },
+    {
+      "term": "video stimuli"
     }
   ],
   "related_identifiers": [
@@ -42,14 +50,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005346",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds005346.v1.0.5",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005346",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -60,6 +68,10 @@
     {
       "funder_name": "West China Hospital of Sichuan University Biomedical Research Ethics Committee",
       "award_number": "2024[657]"
+    },
+    {
+      "funder_name": "Unknown",
+      "award_number": ""
     }
   ],
   "resource_type_specific": "Structural MRI Dataset",
