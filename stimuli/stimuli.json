@@ -1,0 +1,56 @@
+{
+  "stim_id": {
+    "Description": "Stimulus identifier; equal to the BIDS task label of the recordings that show it."
+  },
+  "task": {
+    "Description": "BIDS task label of the recordings that show this stimulus."
+  },
+  "source_title": {
+    "Description": "Title of the source work or upload."
+  },
+  "source_id": {
+    "Description": "Identifier of the source (YouTube id, archive or deposit identifier, clip name)."
+  },
+  "source_url": {
+    "Description": "Where the source can be obtained (official page, upload or deposit). Not a copy made by us."
+  },
+  "rights": {
+    "Description": "Rights note. The video is third-party broadcast content (Hunan TV, 2013). Its file is included in this dataset at sourcedata/stimuli/baba_video.mp4, deposited by the dataset authors (OpenNeuro ds005346, commit b0d4795, 2025-07-13) and redistributed in this dataset with permission obtained by its NEMAR curator (Bruno Aristimunha). The dataset licence (CC0) does not cover the video; its rights stay with the rights holder. This enrichment did not add the file."
+  },
+  "duration_s": {
+    "Description": "Duration of the presented version.",
+    "Units": "s"
+  },
+  "fps": {
+    "Description": "Frame rate of the file described by sha256 (ffprobe).",
+    "Units": "Hz"
+  },
+  "width": {
+    "Description": "Frame width of the file described by sha256 (ffprobe).",
+    "Units": "pixel"
+  },
+  "height": {
+    "Description": "Frame height of the file described by sha256 (ffprobe).",
+    "Units": "pixel"
+  },
+  "n_frames": {
+    "Description": "Number of video frames of the file described by sha256 (ffprobe packet count)."
+  },
+  "audio": {
+    "Description": "yes if the file described by sha256 has an audio stream."
+  },
+  "sha256": {
+    "Description": "SHA-256 of the file named in verification, so a user can check an own copy. n/a when no byte-identical presentation file is known."
+  },
+  "verification": {
+    "Description": "How identity and timing were checked."
+  },
+  "confidence": {
+    "Description": "Confidence in identity and timing.",
+    "Levels": {
+      "verified": "identity and timing checked against data or files of this dataset",
+      "likely": "identity verified, timing from one anchor, or two independent anchors agree",
+      "unknown": "not checked or not resolvable from public material"
+    }
+  }
+}
