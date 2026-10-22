@@ -1,3 +1,11 @@
+1.0.1 2026-10-14 (NEMAR on005346 1.0.1; the entries below are the OpenNeuro ds005346 history up to 1.0.5, the source of NEMAR 1.0.0)
+  - Added stimuli/stimuli.tsv and stimuli.json (the task-baba video already in sourcedata/stimuli/; no media added).
+  - README: section 'Stimuli' (video source, timing of the MEG recordings, sub-54 unreadable task-baba FIF, amplitude-scale difference between participant groups).
+  - stimuli.json, stimuli.tsv (rights) and README: the video file is included in sourcedata/ (deposited by the
+    authors on OpenNeuro), redistributed with permission obtained by the NEMAR curator; not covered by CC0. The sidecar
+    wrongly said 'not included'.
+  - dataset_description.json: Version 1.0.0 -> 1.0.1. No GeneratedBy entry: one makes bids-validator 3.0.2 apply derivative rules to the raw NIfTI files (SkullStripped required, 179 errors), so this enrichment is recorded here only.
+
 1.0.5 2025-12-18
   - - update sub13-20
 1.0.4 2025-08-06
